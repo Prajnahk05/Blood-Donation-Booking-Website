@@ -1,0 +1,33 @@
+.container{
+    border-radius: 0.6rem;
+     box-shadow: rgba(100, 100, 111, 0.2) 0 20px 30px 0;
+    width:22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height:25rem;
+    background-color:rgb(247, 244, 246);
+    
+  }
+  .sd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #root{
+    height:100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+
+  
+  .btn {
+    height:40px;
+  }

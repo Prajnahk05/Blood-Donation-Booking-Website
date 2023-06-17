@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.logo{
+  width:45px;
+  height: 55px;
+  padding-top: 0.4rem;
+}
+
+.navbar-logo{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+.NavbarItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 5px 15px 0 rgba(51, 13, 191, 0.25);
+  width:95%;
+  height:80px;
+  border-radius: 15px;
+  border-color: aqua;
+  position:absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 99;
+  background-color:white;
+  
+  
+}
+
+.nav-links {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding:10px;
+  white-space: nowrap;
+
+}
+
+.logoContainer{
+  display: flex;
+  align-items:center ;
+}
+
+.nav-menu{
+  display: flex;
+  gap:1rem;
+  position: relative;
+  align-items: center;
+
+}
+
+
+.App{
+  background-color: #61dafb;
+  text-align: center;
+  
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-links:hover{
+  background-color:rgb(181, 42, 42);
+  color:white;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  
+  
+}
+
+.nav-links-mobile{ 
+  display:flex; 
+  text-decoration: none;
+  padding:13px;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out; 
+  color: black; 
+
+}
+.nav-links-mobile:hover{
+  background-color:rgb(181, 42, 42);
+  color: #fff;
+  border-radius: 4px;
+}
+
+
+ .menu-icons{
+  display: none; 
+  position:absolute;
+ }
+ 
+.sub-menu{
+  position: absolute;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  width:350px;
+  border: 2px solid #ccc;
+  background-color: #e5e2e2;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  text-decoration:none;
+}
+
+.nav-item:hover .sub-menu{
+  display: inline;
+}
+
+.sub-menu-links{
+  padding: 5px 10px;
+  width: 30px;
+  
+}
+
+.sub-menu-links:hover {
+  border-radius: 3px;
+  transition: black 0.2s ease-in-out;
+}
+
+
+.nav-item{
+  display: block;
+  width:100%;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ @media screen and (max-width: 850px){
+  .NavbarItems{
+    z-index: 99;
+    width: 650px;
+}
+    
+  .nav-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:azure; 
+    width:100%;
+    height: auto;
+    position: absolute;
+    top:0;
+    left: -100%;
+    opacity: 0;
+    align-items: center;
+    padding:80px 0 30px 0;
+    margin:0;
+    transition: 0.3s ease-in-out;
+    border-radius:15px;
+ }
+
+  .nav-menu.active{
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+
+  .menu-icons{
+    display: block;
+    cursor: pointer;
+    right: 0;
+  }
+
+  .menu-icons i{
+    font-size: 1.2rem;
+    color:#222;
+
+  }
+
+  .b7{
+    width: 90%;
+    height: 40%;
+    gap: 5px;
+    
+  }
+
+  .blood-donation-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nav-item{
+    display: inline;
+    width:100%;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    text-decoration: none;
+  }
+
+  .nav-menu li a:hover{
+    background-color:rgb(181, 42, 42);;
+    transition: none ;
+}
+
+.nav-links-mobile{
+  display:block;
+  text-align: center;
+  padding: 1.5rem;
+  margin: auto;
+  border-radius: 4px;
+  width: 100%;
+  text-decoration: none;
+  background-color: #e5e2e2;
+  color:black;
+  font-size: 1.2rem;
+  font-weight:500;
+  letter-spacing: 2px;
+}
+}
+
+
+.cName{
+  text-align:center ;
+}
+
+.blood-donation-image {
+  width: 100%;
+  height: 100%;
+}
+
+.h2{
+  text-align: center;
+  color:rgb(150, 21, 21);
+  text-decoration: underline;
+}
+
+.h3{
+  text-align: center;
+}
+
+.h4{
+  text-align: center;
+}
+
+.h5{
+  text-align: center;
+}
+
+.h6{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.h7{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+
+.b1{
+  text-align: center;
+  
+}
+
+.b2{
+  text-decoration-line: underline;
+}
+
+.b3{
+  background-color:rgb(243, 240, 235);
+}
+.b3 ul li strong {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+  
+.b4{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.b5{
+  text-align: center;
+  color: maroon;
+}
+
+.b6{
+  justify-content: center;
+  display: flex;
+  
+}
+
+.b7{
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;;
+}
+
+.b8{
+  width: 20%;
+  height: 13%;
+  
+}
+
+.b9{
+  top: 100px;
+}
+
+.box {
+  border: 10px solid black;
+  padding: 60px;
+  width: 40%;
+  border-color: rgb(181, 42, 42);
+  
+}
+
+.box1{
+  border: 1px solid black;
+  padding: 10px;
+  width: 40%;
+}
+
+.c1{
+  background-color:rgb(243, 240, 235);
+}
+
+.c2{
+  color:maroon;
+  padding-left: 20px;
+}
+
+.c3{
+  width: 60%; 
+  height: 60%;
+  padding-left: 20px;
+  
+}
+
+.c4{
+  text-align:initial;
+  padding-left: 30px;
+}
+
+.c5{
+  padding-left: 20px;
+}
+
+.c6{
+  padding-left: 20px;
+  width:100%;
+  height:100%;
+}
+
+.c7{
+  display: flex;
+}
+
+.c8{
+  padding-left: 20px;
+}
+
+.d1{
+  display: flex;
+  flex-direction: row;
+}
+
+.d2{
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.d3{
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.d4{
+  background-color:rgb(243, 240, 235) ;
+}
+
+.d5{
+  padding-left: 20px;
+}
+
+.e1{
+  padding-left: 20px;
+  width: 250px;
+  height: 350px;
+}
+
+.e2{
+  padding-left: 30px;
+}
+
+.e3{
+  padding-left: 20px;
+}
+
+.e4{
+  padding-left: 30px;
+  
+}
+
+.e5{
+  padding-left: 30px;
+  width: 60%;
+  height: 50%;
+}
+
+.p1{
+  text-align: center;
+  padding-left: 600px;
+}
+
+
+.mainContainer{
+  width:100%;
+ 
+}
+
+.signUpCon{
+  display: flex;
+  align-items: center;
+  justify-content:center ; 
+  height: 100%;
+}
+
+.p1{
+  align-items:center;
+}
